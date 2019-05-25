@@ -1,0 +1,8 @@
+-----------------------------
+----------Doctor: 1----------
+Id: 190
+Nombre: Enrique 
+Especialidad: Cirugía
+Correo: enrique_h@hotmail.com
+Telefono: 98593924
+Tarifa de consulta: 90.0
