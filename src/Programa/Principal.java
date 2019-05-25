@@ -64,14 +64,12 @@ public class Principal {
                         }
                     }while(opt2!=4);
                 }break;
+                
                 case 2:{
-                    opt3=0;
                      do{ 
-                         
                         menus.subMenuConsultaGeneral();
                         opt3= scanner.nextInt();
-                      switch(opt3)
-                        {
+                      switch(opt3){
                             case 1: {
                                 pacientesConsulta=controlsubMenuPacientesConsulta.nuevoPacienteConsulta(doctores,pacientesIngreso,pacientesConsulta, consultorios);
                                 controlsubMenuPacientesConsulta.asignacionConsultorio(pacientesConsulta, consultorios);
@@ -81,29 +79,21 @@ public class Principal {
                         }
                      }
                      while(opt3!=2);
-                    
-                    
-                }break;  
+                }break; 
+                
                 case 3:{
-                    opt3=0;
-                    
-                     do
-                     {  menus.subMenuIngreso();
+                     do{  
+                        menus.subMenuIngreso();
                         opt3= scanner.nextInt();
-                         switch(opt3)
-                        {
-                            case 1: 
-                            {
+                         switch(opt3){
+                            case 1:{
                                 pacientesIngreso=controlSubMenuPacientesIngreso.nuevoPacienteIngreso(doctores, pacientesIngreso, pacientesConsulta, consultorios);
                                 controlSubMenuPacientesIngreso.asignacionHabitacion(pacientesIngreso, consultorios);
                                 consultorios=controlSubMenuPacientesIngreso.getConsultorios();
                                 doctores=controlSubMenuPacientesIngreso.getDoctores();    
                             }break;
                         }
-                     }
-                     while(opt3!=2);
-                    
-                    
+                     }while(opt3!=2);
                 }break;    
             }
         }while(opt1!=6);
